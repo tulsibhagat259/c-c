@@ -4,8 +4,8 @@
 void main()
 {
 	char str[100];
-	clrscr();
 	int i, vowels =0,consonants=0;
+	clrscr();
 	printf("\n Emter A string : ");
 	gets(str);
 	for (i=0;str[i] !='\0';i++)
@@ -13,7 +13,7 @@ void main()
 		char c=tolower(str[i]);
 		if (c>='a' && c<='z')
 		{
-			if (c>='a' || c=='e' || c=='i' || c=='o' || c=='u')
+			if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
 				vowels++;
 
 		else
