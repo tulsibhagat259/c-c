@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<conio.h>
+
+void main() 
+{
+    char str[200];
+    int i, j = 0;
+    clrscr();
+    printf("\n Enter a string: ");
+    gets(str);  
+
+    for(i = 0; str[i] != '\0'; i++) 
+    {
+        if((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')) 
+        {
+            str[j] = str[i];
+            j++;
+        }
+    }
+    str[j] = '\0'; 
+
+    printf("String after removing non-alphabets: %s\n", str);
+    getch();
+}

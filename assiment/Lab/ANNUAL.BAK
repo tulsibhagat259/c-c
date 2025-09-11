@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main() 
+{
+    float monthly_salary, annual_salary;
+    clrscr();   
+
+    printf("Enter your monthly salary: ");
+    scanf("%f", &monthly_salary);
+
+    annual_salary = monthly_salary * 12;
+
+    printf("Annual Salary = %.2f", annual_salary);
+
+    getch();   
+}
